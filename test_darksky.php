@@ -1,11 +1,13 @@
-<?php
+#! /usr/bin/env php
 
-## position at 23 Ferguson Street, Picton, ON CA.
+//<?php
+
+//  position at 23 Ferguson Street, Picton, ON CA.
 
 $lat=44.00434;
 $lon=-77.14530;
-$key="$DARK_SKY_KEY"
-$url="https://api.darksky.net/forecast";
+$key=getenv('DARK_SKY_KEY');
+$url="https://api.darksky.net/forecast/";
 $sky=$url . $key . "/" . $lat . "," . $lon . "?units=si";  
 
 //echo $sky;

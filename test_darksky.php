@@ -1,14 +1,16 @@
 #! /usr/bin/env php
 
-//<?php
+// <?php
 
 //  position at 23 Ferguson Street, Picton, ON CA.
 
 $lat=44.00434;
 $lon=-77.14530;
 $key=getenv('DARK_SKY_KEY');
+$opt="?units=si";
 $url="https://api.darksky.net/forecast/";
-$sky=$url . $key . "/" . $lat . "," . $lon . "?units=si";  
+
+$sky=$url . $key . "/" . $lat . "," . $lon . $opt;  
 
 //echo $sky;
 //return true;
@@ -21,14 +23,14 @@ $ch=curl_init();
 curl_setopt($ch, CURLOPT_URL, $sky);
 curl_setopt($ch, CURLOPT_HEADER, false);
 
-
 // return the transfer as a string 
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
 $output = curl_exec($ch); 
-// $output contains the output string 
-var_dump($output);
 
-//var_dump(json_decode($output, true));
+// $output contains the output string 
+//var_dump($output);
+
+var_dump(json_decode($output, true));
 
 curl_close($ch);      
 

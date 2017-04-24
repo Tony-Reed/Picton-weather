@@ -4,7 +4,7 @@
 
 $lat=44.00434;
 $lon=-77.14530;
-$key="/b5047f53f70b44773144870d4b258e26";
+$key="$DARK_SKY_KEY"
 $url="https://api.darksky.net/forecast";
 $sky=$url . $key . "/" . $lat . "," . $lon . "?units=si";  
 

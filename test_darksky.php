@@ -1,7 +1,7 @@
 #! /usr/bin/env php
 
 //  DarkSky API
-//  GPS polition at 23 Ferguson Street, Picton, ON CA
+//  GPS position at 23 Ferguson Street, Picton, ON CA
 //  (my desk)
 
 $lat=44.004401;

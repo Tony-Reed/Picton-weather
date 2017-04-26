@@ -1,6 +1,5 @@
 #! /usr/bin/env php
 
-// <?php
 //  DarkSky API
 //  GPS polition at 23 Ferguson Street, Picton, ON CA
 //  (my desk)
@@ -44,6 +43,6 @@ curl_exec($ch);
 
 fclose($fp);
 curl_close($ch);      
-?>
+
 
 

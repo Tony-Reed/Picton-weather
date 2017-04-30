@@ -1,7 +1,7 @@
 <?php
 
-$lat=44.004401;
-$lon=-77.145244;
+$lat=44.00429;
+$lon=-77.14528;
 $key=getenv('DARK_SKY_KEY');
 $opt="?units=ca";
 $url="https://api.darksky.net/forecast/";

@@ -1,5 +1,7 @@
 <?php
 
+mb_internal_encoding("UTF-8");
+
 $lat=44.00429;
 $lon=-77.14528;
 $key=getenv('DARK_SKY_KEY');

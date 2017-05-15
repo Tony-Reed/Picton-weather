@@ -1,10 +1,15 @@
 #!/bin/sh
 
+sunDown=$(jq '.daily.data[0].sunsetTime' < dksky.json)
+sunUp=$(jq '.daily.data[0].sunriseTime' < dksky.json)
 curDay=$(jq '.daily.data[0].time' < dksky.json)
-date "+%A %H:%M:%S" --date=@$curDay
+date "+%A " --date=@$curDay
 jq '.daily.data[0].summary' < dksky.json
-echo "Today's high:"
+printf "Today's high: "
 jq '.daily.data[0].temperatureMax' <dksky.json
-echo "Overnight:"
+printf "Overnight: "
 jq '.daily.data[0].temperatureMin' <dksky.json
-
+printf  "Sunrise:  "
+date "+ %H:%M:%S" --date=@$sunUp
+printf "Sunset:   "
+date "+ %H:%M:%S" --date=@$sunDown

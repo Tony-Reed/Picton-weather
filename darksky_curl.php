@@ -1,9 +1,7 @@
 
-#tempMin=$(jq '.currently.temperatureMin' dkSky.json)
-#sunDown=$(jq '.currently.sunsetTime' dkSky.json)
-#sunUp=$(jq '.currently.sunriseTime' dkSky.json)
-
-
+//tempMin=$(jq '.currently.temperatureMin' dkSky.json)
+//sunDown=$(jq '.currently.sunsetTime' dkSky.json)
+//sunUp=$(jq '.currently.sunriseTime' dkSky.json)
 
 /* 
 Another approach

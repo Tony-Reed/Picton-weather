@@ -1,31 +1,41 @@
 #!/bin/bash
 
 #php darksky.php
+
 #jq --arg i  $i '.daily.data[$i|tonumber]' <dkSky.json
 
 
 i=0
-	while [ $i -lt 8 ]
+while [ $i -lt 8 ]
 do
 
-	tempMax=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.temperatureMax' dkSky.json)
-	tempMin=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.temperatureMin' dkSky.json)
-	sunDown=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.sunsetTime' dkSky.json)
-	sunUp=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.sunriseTime' dkSky.json)
-	curDay=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.time' dkSky.json)
-	sum=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.summary' dkSky.json)
-	
-	date "+%A " --date=@$curDay
+tempMax=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.temperatureMax' dkSky.json)
+tempMin=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.temperatureMin' dkSky.json)
+sunDown=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.sunsetTime' dkSky.json)
+sunUp=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.sunriseTime' dkSky.json)
+curDay=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.time' dkSky.json)
+sum=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.summary' dkSky.json)
 
-	printf "$sum\n"
-	printf  "High for the Day: %.0f\n" $tempMax
-	printf "Overnight: %.0f\n" $tempMin
+#jq  '.daily.summary' dkSky.json
+printf "<p>"
+date "+%A " --date=@$curDay
+printf "</br>"
+printf "$sum\n"
+printf "</br>"
 
-	printf "Sunrise: "
-		date "+ %H:%M:%S" --date=@$sunUp
-	printf "Sunset: "
-		date "+ %H:%M:%S" --date=@$sunDown
-	printf "\n"
+printf  "High for the Day: %.0f\n" $tempMax
+printf "</br>"
 
-	i=$[$i+1]
+printf "Overnight: %.0f\n" $tempMin
+printf "</br>"
+
+printf "Sunrise: "
+date "+ %H:%M:%S" --date=@$sunUp
+printf "</br>"
+printf "Sunset: "
+date "+ %H:%M:%S" --date=@$sunDown
+printf "</br>"
+
+i=$[$i+1]
 done
+return true

@@ -1,0 +1,31 @@
+#!/bin/bash
+
+#php darksky.php
+
+
+curTime=$(jq '.currently.time' dkSky.json)
+curTemp=$(jq '.currently.temperature' dkSky.json)
+
+# get today's high from the "daily" object
+tempMax=$(jq '.daily.data[0].temperatureMax' dkSky.json)
+
+windMPH=$(jq '.currently.windSpeed' dkSky.json)
+windFrom=$(jq '.currently.windBearing' dkSky.json)
+#tempMin=$(jq '.currently.temperatureMin' dkSky.json)
+#sunDown=$(jq '.currently.sunsetTime' dkSky.json)
+#sunUp=$(jq '.currently.sunriseTime' dkSky.json)
+
+date "+%Y-%m-%d %H:%M:%S" --date=@$curTime
+date "+%A %B %e" --date=@$curTime
+jq '.currently.summary' dkSky.json
+
+printf 'Current temp: %.0f\n' $curTemp 
+printf 'High today: %.0f\n' $tempMax
+
+printf 'Wind %.0f' $windMPH 
+printf ' mph'
+printf ' from '
+printf  $windFrom
+printf '\n'
+## TODO parse degrees into directions
+##      parse icons into something usefull

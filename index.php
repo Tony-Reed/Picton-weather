@@ -1,5 +1,6 @@
 <?php
 header("Content-type: text/html; charset=utf-8");
+header("Accept-Encoding: gzip")
 header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
 header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
 header("Expires: Fri, 22 Nov 1963 18:30:00 GMT\n"); // Date in the past

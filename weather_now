@@ -15,8 +15,8 @@ windFrom=$(jq '.currently.windBearing' dkSky.json)
 #sunDown=$(jq '.currently.sunsetTime' dkSky.json)
 #sunUp=$(jq '.currently.sunriseTime' dkSky.json)
 
-date "+%Y-%m-%d %H:%M:%S" --date=@$curTime
-date "+%A %B %e" --date=@$curTime
+#date "+%Y-%m-%d %H:%M:%S" --date=@$curTime
+date "+%A %B %e %Y" --date=@$curTime
 jq '.currently.summary' dkSky.json
 
 printf 'Current temp: %.0f\n' $curTemp 

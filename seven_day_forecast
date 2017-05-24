@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#php darksky.php
-
 i=0
 while [ $i -lt 8 ]
 do

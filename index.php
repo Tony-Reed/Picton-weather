@@ -24,9 +24,8 @@ header("Creation-Date: Wed, 24 May 2017 12:00:00 GMT/n");
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Weather  Web Site</title>
+<title>Weather Web Site</title>
 <link href="main.css" rel="stylesheet" />
-<meta name="title" content="Tony Picton Weather" />
 <link rel="shortcut icon" href="http://www.trljc.com/favicon.ico" type="image/x-icon" /> 
 </head>
 
@@ -34,8 +33,8 @@ header("Creation-Date: Wed, 24 May 2017 12:00:00 GMT/n");
 
 <?php 
 @include "times.php";
-//echo "<footer id=\"date\" title=\"Today's Date\">" . $today. "</footer>";?>
 
+//echo "<footer id=\"date\" title=\"Today's Date\">" . $today. "</footer>";?>
 
 </body>
 </html>

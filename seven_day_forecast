@@ -2,9 +2,6 @@
 
 #php darksky.php
 
-#jq --arg i  $i '.daily.data[$i|tonumber]' <dkSky.json
-
-
 i=0
 while [ $i -lt 8 ]
 do
@@ -17,7 +14,7 @@ curDay=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.time' dkSky.json)
 sum=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.summary' dkSky.json)
 
 #jq  '.daily.summary' dkSky.json
-printf "<p>"
+printf "<div>"
 date "+%A " --date=@$curDay
 printf "</br>"
 printf "$sum\n"
@@ -34,8 +31,8 @@ date "+ %H:%M:%S" --date=@$sunUp
 printf "</br>"
 printf "Sunset: "
 date "+ %H:%M:%S" --date=@$sunDown
-printf "</br>"
+printf "</p></div>"
 
 i=$[$i+1]
 done
-return true
+

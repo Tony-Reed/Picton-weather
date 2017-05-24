@@ -1,7 +1,20 @@
-BODY {background-color: #fff;
-      color: #000000;
-      font-family: verdana, helvetica, sans-serif;
-}
+body { margin: 0; padding: 0; color: #000 background-color: #fff;
+       font-family: verdana, helvetica, sans-serif; font-size: 12px;}
+
+
+A { color: #000; text-decoration: none; font-size: 12px; 
+  font-family: verdana, sans-serif; letter-spacing: 0.2em; }
+
+A:visited { color: #000; text-decoration: none; letter-spacing: 0.2em;	 
+	  font-size: 12px; font-family: verdana, sans-serif; }
+
+A:hover { color: #8f0000; text-decoration: none; letter-spacing: 0.2em;
+        font-family: verdana, sans-serif; }
+
+div,figure,nav,figcaption,footer { text-align: left; 
+	font-family:verdana, sans-serif; 
+	font-size: 14px;
+        padding-left: 10px; }
 
 DIV.nav { background-color: #cfcfcf; padding-top: 8px;
           padding-bottom: 8px; }

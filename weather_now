@@ -16,6 +16,8 @@ windFrom=$(jq '.currently.windBearing' dkSky.json)
 #sunUp=$(jq '.currently.sunriseTime' dkSky.json)
 
 #date "+%Y-%m-%d %H:%M:%S" --date=@$curTime
+
+printf '<div>'
 date "+%A %B %e %Y  %r" --date=@$curTime
 
 jq '.currently.summary' dkSky.json
@@ -27,6 +29,8 @@ printf 'Wind %.0f' $windMPH
 printf ' mph'
 printf ' from '
 printf  $windFrom
-printf '\n'
+#printf '\n'
+printf '</p>'
+
 ## TODO parse degrees into directions
 ##      parse icons into something usefull

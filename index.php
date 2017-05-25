@@ -12,11 +12,9 @@ header("Creation-Date: Wed, 24 May 2017 12:00:00 GMT/n");
 
 <!--   
      I hope you're having a nice day
-     Website by Tony Reed
+     Website & code by Tony Reed
 -->
-
 <html lang="en">
-
 <head> 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,13 +27,14 @@ header("Creation-Date: Wed, 24 May 2017 12:00:00 GMT/n");
 <link href="main.css" rel="stylesheet" />
 <link rel="shortcut icon" href="http://www.trljc.com/favicon.ico" type="image/x-icon" /> 
 </head>
-
 <body>
-
 <?php 
-@include "times.php";
+// call in the cavalry      
 
-//echo "<footer id=\"date\" title=\"Today's Date\">" . $today. "</footer>";?>
+     @include "times.php";
+ 
+//echo "<footer id=\"date\" title=\"Today's Date\">" . $today. "</footer>";
+?>
 
 </body>
 </html>

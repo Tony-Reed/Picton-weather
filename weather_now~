@@ -16,7 +16,7 @@ windFrom=$(jq '.currently.windBearing' dkSky.json)
 
 printf '<div>'
 date "+%A %B %e %Y  %r" --date=@$curTime
-printf '<br>'
+
 jq '.currently.summary' dkSky.json
 
 printf 'Current temp: %.0f &#x2103; ' $curTemp 

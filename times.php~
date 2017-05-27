@@ -10,7 +10,7 @@ mb_regex_encoding('UTF-8');
 
 
 // get the DarkSky forecast
-include 'darksky.php';
+//include 'darksky.php';
 
 // print current conditions
 $output = shell_exec('./weather_now');

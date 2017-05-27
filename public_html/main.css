@@ -1,0 +1,64 @@
+body { margin: 0; padding: 0; color: #000 background-color: #fff;
+       font-family: verdana, helvetica, sans-serif; font-size: 12px;}
+
+
+A { color: #000; text-decoration: none; font-size: 12px; 
+  font-family: verdana, sans-serif; letter-spacing: 0.2em; }
+
+A:visited { color: #000; text-decoration: none; letter-spacing: 0.2em;	 
+	  font-size: 12px; font-family: verdana, sans-serif; }
+
+A:hover { color: #8f0000; text-decoration: none; letter-spacing: 0.2em;
+        font-family: verdana, sans-serif; }
+
+div,figure,nav,figcaption,footer { text-align: left; 
+	font-family:verdana, sans-serif; 
+	font-size: 14px;
+        padding-left: 10px; }
+
+DIV.nav { background-color: #cfcfcf; padding-top: 8px;
+          padding-bottom: 8px; }
+
+STRONG {font-weight: bold;
+	color: #7B0000;}
+
+A:link {color: #000000;
+       background: #cfcfcf;
+       text-decoration: none;
+       font-weight: bold;
+       font-size: 12px;   
+       font-family: verdana, helvetica, sans-serif;
+}
+	
+A:visited {color: #8F8F8F;
+	  background: #cfcfcf;
+	  text-decoration: none;
+	  font-weight: bold;
+	  font-size: 12px;   
+	  font-family: verdana, sans-serif;
+}
+
+
+A:hover {color: #8f0000;}
+
+A:active {color: #3333FF;}
+
+.top {text-indent: -10px;}
+
+.verse {text-indent: -15px;}
+
+.key {font: 12px monospace;}
+
+.frank {text-decoration: underline;}
+
+.all {background: #FFFFFF;
+     font-weight: normal;      
+     font-size: 12px;
+     font-family: verdana, helvetica, sans-serif;	
+     margin: 24pt;
+}
+
+
+
+
+

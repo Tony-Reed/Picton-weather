@@ -16,13 +16,14 @@ $key=getenv('DARK_SKY_KEY');
 // Dark Sky magic
 $url="https://api.darksky.net/forecast/";
 
-// we're not working with the minute-by-minute forecast
-// we don't need the weatherstation flags
+// We're not working with the minute-by-minute forecast yet
+// And we don't need the weatherstation flags
 $exc="?exclude=minutely,flags";
 $opt="&units=uk2";
 
 // put together a custom url
 $dkSky=$url . $key . "/" . $lat . "," . $lon . $exc .  $opt;  
+
 /*
 // debugging
 //echo  $dkSky;
@@ -32,7 +33,7 @@ $dkSky=$url . $key . "/" . $lat . "," . $lon . $exc .  $opt;
 // download the forecast
 $dkSky=file_get_contents($dkSky);
 
-// save it to work with
+// save it to use jq on it
 $fp=fopen("dkSky.json", "w");
 fwrite($fp, $dkSky);
 fclose($fp);

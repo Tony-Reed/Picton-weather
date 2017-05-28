@@ -7,8 +7,6 @@ mb_http_input('UTF-8');
 mb_language('uni');
 mb_regex_encoding('UTF-8');
 
-
-
 // get the DarkSky forecast
 include 'darksky.php';
 

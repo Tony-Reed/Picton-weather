@@ -30,6 +30,7 @@ printf ' from '
 printf  $windFrom
 printf '&deg\n'
 source wind.sh
+source hours.sh
 #printf '\n'
 printf '</div> </p>'
 

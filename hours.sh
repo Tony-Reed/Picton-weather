@@ -11,12 +11,8 @@ hrsClock=$(date "+%I %p" --date=@$hrsTime)
 hrsTemp=$(jq --arg i "$i" '.hourly.data[$i|tonumber].temperature' dkSky.json)
 
 printf "$hrsClock\t"
-
 printf "$hrsSum\t"
-
 printf '%.0f\t' $hrsTemp
-
-
 i=$[$i+1]
 printf "\n"
 done

@@ -30,9 +30,10 @@ printf ' from '
 printf  $windFrom
 printf '&deg\n'
 source wind.sh
-source hours.sh
 #printf '\n'
 printf '</div> </p>'
 
-## TODO WIND parse degrees into directions
+source hours.sh
+source alerts.sh
+
 ## parse icons into something usefull

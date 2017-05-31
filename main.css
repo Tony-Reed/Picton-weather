@@ -1,6 +1,7 @@
 body { margin: 0; padding: 0; color: #000 background-color: #fff;
        font-family: verdana, helvetica, sans-serif; font-size: 12px;}
 
+div.hours {padding-left: 30px; padding-bottom: 30px; }
 
 A { color: #000; text-decoration: none; font-size: 12px; 
   font-family: verdana, sans-serif; letter-spacing: 0.2em; }
@@ -15,6 +16,7 @@ div,figure,nav,figcaption,footer { text-align: left;
 	font-family:verdana, sans-serif; 
 	font-size: 14px;
         padding-left: 10px; }
+
 
 DIV.nav { background-color: #cfcfcf; padding-top: 8px;
           padding-bottom: 8px; }

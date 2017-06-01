@@ -4,7 +4,6 @@ daySum=$(jq '.daily.summary' dkSky.json)
 printf "<div class=hours>"
 printf "$daySum"
 printf "</div>"
-
 i=1
 while [ $i -lt 8 ]
 do

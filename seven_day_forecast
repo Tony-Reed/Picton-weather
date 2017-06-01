@@ -1,7 +1,7 @@
 #!/bin/bash
 
 daySum=$(jq '.daily.summary' dkSky.json)
-printf "<div class=hours>"
+printf "<div class="hours">"
 printf "$daySum"
 printf "</div>"
 
@@ -16,8 +16,12 @@ sunUp=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.sunriseTime' dkSky.json)
 curDay=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.time' dkSky.json)
 sum=$(jq --arg i "$i" '.daily.data[$i|tonumber]|.summary' dkSky.json)
 
-printf "<div>"
+
+printf "<span class="strng">"
 date "+%A " --date=@$curDay
+printf "</span>"
+printf "<div class="days">"
+
 printf "</br>"
 printf "$sum\n"
 printf "</br>"

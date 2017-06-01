@@ -14,7 +14,7 @@ windFrom=$(jq '.currently.windBearing' dkSky.json)
 #sunUp=$(jq '.currently.sunriseTime' dkSky.json)
 #date "+%Y-%m-%d %H:%M:%S" --date=@$curTime
 
-printf '<div>'
+printf '<div class="now">'
 date "+%A %B %e %Y  %r" --date=@$curTime
 printf '<br>'
 jq '.currently.summary' dkSky.json
@@ -31,7 +31,7 @@ printf  $windFrom
 printf '&deg\n'
 source wind.sh
 #printf '\n'
-printf '</div> </p>'
+printf '</div>
 
 source ./alerts
 source ./hours

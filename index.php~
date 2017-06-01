@@ -34,7 +34,7 @@ if(!ob_start("ob_gzhandler")) ob_start();
 
 <body>
 <header> 
-<h1>The weather in Picton Ontario Canada, <br>powered by <a href="https://darksky.net/poweredby/"> DarkSky </a></h1>
+<h1>The weather in Picton Ontario Canada, powered by <a href="https://darksky.net/poweredby/"> DarkSky </a></h1>
 </header>
 <article>
 

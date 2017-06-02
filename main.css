@@ -13,7 +13,11 @@ body { margin: 0; padding: 10px; color: #000000 background-color: #ffffff;
 h1 { font-size: 1.5em; text-align:center; padding:12px;}
 
 div.days {padding-bottom: 2px;}
-div.hours {padding-top: 10px; padding-left: 20px; padding-bottom: 20px; }
+div.hours {padding-top: 10px;
+           padding-left: 20px;
+           padding-bottom: 20px;
+           text-align: center;}
+
 div.now { text-align:center; }
 span.strng {font-weight: bold;
 	color: #7B0000;}

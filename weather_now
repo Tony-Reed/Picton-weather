@@ -30,7 +30,7 @@ printf ' from '
 printf  $windFrom
 printf '&deg\n'
 source wind.sh
-#printf '\n'
+
 printf '</div>'
 
 source ./alerts

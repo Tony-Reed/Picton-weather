@@ -18,7 +18,7 @@ $url="https://api.darksky.net/forecast/";
 
 // We're not working with the minute-by-minute forecast yet
 // And we don't need the weatherstation flags
-$exc="?exclude=minutely,flags";
+$exc="?exclude=flags";
 
 // this gets the windspeed in MPH ("cause I like that!
 $opt="&units=uk2";

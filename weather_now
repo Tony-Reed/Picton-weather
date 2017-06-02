@@ -9,6 +9,7 @@ tempMax=$(jq '.daily.data[0].temperatureMax' dkSky.json)
 
 windMPH=$(jq '.currently.windSpeed' dkSky.json)
 windFrom=$(jq '.currently.windBearing' dkSky.json)
+
 #tempMin=$(jq '.currently.temperatureMin' dkSky.json)
 #sunDown=$(jq '.currently.sunsetTime' dkSky.json)
 #sunUp=$(jq '.currently.sunriseTime' dkSky.json)

@@ -43,7 +43,10 @@ if(!ob_start("ob_gzhandler")) ob_start();
 
      @include "times.php";
  
-//echo "<footer id=\"date\" title=\"Today's Date\">" . $today. "</footer>";
+/*
+echo "<footer id=\"date\" title=\"Today's Date\">" . $today. "</footer>";
+*/
+
 while (@ob_end_flush());
 ?>
 

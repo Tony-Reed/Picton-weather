@@ -38,22 +38,16 @@ if(!ob_start("ob_gzhandler")) ob_start();
 
 <article>
 <?php 
+
 // call in the cavalry      
 
      @include "times.php";
  
-<<<<<<< HEAD
-=======
-/*
-echo "<footer id=\"date\" title=\"Today's Date\">" . $today. "</footer>";
-*/
-
->>>>>>> 949fb88dcdcbea08109d309b7f8708c3f5e26be4
 while (@ob_end_flush());
 ?>
 
 </article>
-//echo "<footer id=\"date\" title=\"Today's Date\">" . $today. "</footer>";
+
 </body>
 </html>
 

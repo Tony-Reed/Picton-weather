@@ -16,8 +16,8 @@ $key=getenv('DARK_SKY_KEY');
 // Dark Sky magic
 $url="https://api.darksky.net/forecast/";
 
-
-// We don't need the weatherstation flags
+// We're not working with the minute-by-minute forecast yet
+// And we don't need the weatherstation flags
 $exc="?exclude=flags";
 
 // this gets the windspeed in MPH ("cause I like that!

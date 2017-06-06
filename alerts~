@@ -1,7 +1,5 @@
 #!/bin/bash
 
-   # Sometimes there are alerts
-
 if [ -e "jq '.alerts' dkSky.json" ]
 
 then
@@ -20,7 +18,6 @@ then
    echo "<p>"
    echo $alrtUri
 
-   # Sometimes there are no alerts
 else
     return 42
 fi

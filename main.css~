@@ -28,12 +28,13 @@ hyperlinks
 */
 
 A         { color: #8f0000; text-decoration: none; font-size: 1em; 
-            font-family: Arial, FreeSans, "Nimbus Sans L", sans-serif; }
+            font-family: Arial, FreeSans, "Nimbus Sans L", sans-serif; letter-spacing: 0.2em; }
 
-A:visited { color: #af0000; text-decoration: none;	 
+
+A:visited { color: #af0000; text-decoration: none; letter-spacing: 0.2em;	 
 	    font-size: 1em; font-family: Arial, FreeSans, "Nimbus Sans L", sans-serif; }
 
-A:hover   { color: #a4150f; text-decoration: none;
+A:hover   { color: #a4150f; text-decoration: none; letter-spacing: 0.2em;
             font-weight:bold; font-family: Arial, FreeSans, "Nimbus Sans L", sans-serif; }
 
 

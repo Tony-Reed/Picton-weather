@@ -10,9 +10,6 @@ tempMax=$(jq '.daily.data[0].temperatureMax' dkSky.json)
 windMPH=$(jq '.currently.windSpeed' dkSky.json)
 windFrom=$(jq '.currently.windBearing' dkSky.json)
 
-# for now we just want the summary from the minutely object
-minSum=$(jq '.minutely.summary' dkSky.json)
-
 #tempMin=$(jq '.currently.temperatureMin' dkSky.json)
 #sunDown=$(jq '.currently.sunsetTime' dkSky.json)
 #sunUp=$(jq '.currently.sunriseTime' dkSky.json)
@@ -34,7 +31,6 @@ printf ' from '
 printf  $windFrom
 printf '&deg\n'
 source wind.sh
-printf "$minSum"
 
 printf '</div>'
 

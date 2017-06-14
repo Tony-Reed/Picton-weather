@@ -18,7 +18,6 @@ printf "$hrsClock"
 printf " $hrsSum"
 printf "&nbsp;"
 printf '%.0f' $hrsTemp
-printf "&deg;"
 printf "<br>"
 
 i=$[$i+1]

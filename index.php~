@@ -29,8 +29,8 @@ if(!ob_start("ob_gzhandler")) ob_start();
 <title>Weather Web Site</title>
 <link href="main.css" rel="stylesheet" />
 <link rel="shortcut icon" href="http://www.trljc.com/favicon.ico" type="image/x-icon" /> 
-</head>
 
+</head>
 <body>
 <header> 
 <h1>The weather in Picton Ontario Canada, <br>powered by <a href="https://darksky.net/poweredby/"> DarkSky </a></h1>
@@ -39,26 +39,11 @@ if(!ob_start("ob_gzhandler")) ob_start();
 <article>
 <?php 
 
-/* 
-@include "times.php";
+// call in the cavalry      
 
-Here followeth what was in "times.php"
-*/
-
-
-// get the DarkSky forecast
-include 'darksky.php';
-
-// print current conditions
-$output = shell_exec('./weather_now');
-printf($output);
-
-
-// print seven-day forecast
-$output1 = shell_exec('./seven_day_forecast');
-printf($output1);
-
- while (@ob_end_flush());
+     @include "times.php";
+ 
+while (@ob_end_flush());
 ?>
 
 </article>
